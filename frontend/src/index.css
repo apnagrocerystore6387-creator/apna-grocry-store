@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+button, input, select, textarea {
+  @apply border border-slate-700 bg-slate-900 text-slate-100;
+}
+
+input:focus, button:focus, select:focus, textarea:focus {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-slate-950;
+}
+
+.app-shell {
+  @apply min-h-screen;
+}
